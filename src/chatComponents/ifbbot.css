@@ -1,0 +1,1033 @@
+/* ========================================
+   MentorIA - Personalização do Chat
+   ======================================== */
+
+
+/* ========================================
+   Configurações gerais
+   ======================================== */
+
+   :root {
+    --chat-max-width: 500px;
+}
+
+
+/* ========================================
+   Banner
+   ======================================== */
+
+.mentoria-banner {
+    display: block;
+
+    width: 100%;
+    max-width: var(--chat-max-width);
+    height: auto;
+
+    margin: 0 auto 20px auto;
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   Wrapper do chatbot
+   ======================================== */
+
+.chat-wrapper {
+    position: relative;
+
+    width: 100%;
+    max-width: var(--chat-max-width);
+    min-width: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   Container principal do Chat
+   ======================================== */
+
+.react-chatbot-kit-chat-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ========================================
+   Container interno do Chat
+   ======================================== */
+
+.react-chatbot-kit-chat-inner-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ========================================
+   Container geral das mensagens
+   ======================================== */
+
+.react-chatbot-kit-chat-message-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ========================================
+   Container das mensagens do MentorIA
+   ======================================== */
+
+.react-chatbot-kit-chat-bot-message-container {
+    display: flex !important;
+
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    flex-direction: row !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ========================================
+   Bolha das mensagens do MentorIA
+   ======================================== */
+
+.react-chatbot-kit-chat-bot-message {
+    background-color: #65dab3 !important;
+    color: #000 !important;
+
+    border-radius: 16px !important;
+
+    padding: 14px 18px !important;
+
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+
+    width: auto !important;
+    max-width: calc(100% - 80px) !important;
+    min-width: 0 !important;
+
+    flex: 1 1 0 !important;
+
+    text-align: left !important;
+    align-self: flex-start !important;
+
+    float: none !important;
+
+    box-sizing: border-box !important;
+
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+}
+
+
+/* ========================================
+   Avatar do MentorIA
+   ======================================== */
+
+.react-chatbot-kit-chat-bot-avatar-container {
+    flex-shrink: 0 !important;
+}
+
+
+/* ========================================
+   Espaçamento entre mensagens do MentorIA
+   ======================================== */
+
+.react-chatbot-kit-chat-bot-message-container
+    + .react-chatbot-kit-chat-bot-message-container {
+
+    margin-top: 8px !important;
+}
+
+
+/* ========================================
+   Seta da mensagem do MentorIA
+   ======================================== */
+
+.react-chatbot-kit-chat-bot-message-arrow {
+    border-right: 8px solid #65dab3 !important;
+    border-left: none !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+
+/* ========================================
+   Mensagens do usuário
+   ======================================== */
+
+.react-chatbot-kit-user-chat-message-container {
+    display: flex !important;
+
+    justify-content: flex-end !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+
+    box-sizing: border-box !important;
+}
+
+
+.react-chatbot-kit-user-chat-message {
+    background-color: #8af15d !important;
+    color: rgb(82, 79, 79) !important;
+
+    border-radius: 12px !important;
+
+    padding: 10px 14px !important;
+
+    width: auto !important;
+    max-width: 80% !important;
+    min-width: 0 !important;
+
+    align-self: flex-end !important;
+
+    text-align: right !important;
+
+    box-sizing: border-box !important;
+
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+}
+
+
+/* ========================================
+   Seta da mensagem do usuário
+   ======================================== */
+
+.react-chatbot-kit-user-chat-message-arrow {
+    border-left: 10px solid #8af15d !important;
+    border-right: none !important;
+
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+
+/* ========================================
+   Cabeçalho do Chat
+   ======================================== */
+
+.react-chatbot-kit-chat-header {
+    background-color: #cacfc2 !important;
+    color: #fff !important;
+
+    font-weight: bold;
+    font-size: 13px;
+
+    display: flex !important;
+
+    justify-content: center !important;
+    align-items: center !important;
+
+    padding: 8px 12px;
+
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+
+/* ========================================
+   Markdown das respostas do MentorIA
+   ======================================== */
+
+.mentoria-markdown {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    line-height: 1.6;
+
+    box-sizing: border-box;
+
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+
+.mentoria-markdown * {
+    max-width: 100%;
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   Parágrafos
+   ======================================== */
+
+.mentoria-markdown p {
+    margin: 0 0 10px 0;
+
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+
+.mentoria-markdown p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ========================================
+   Títulos
+   ======================================== */
+
+.mentoria-markdown h1,
+.mentoria-markdown h2,
+.mentoria-markdown h3,
+.mentoria-markdown h4 {
+
+    margin-top: 16px;
+    margin-bottom: 8px;
+
+    line-height: 1.3;
+
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+
+.mentoria-markdown h1 {
+    font-size: 1.4rem;
+}
+
+
+.mentoria-markdown h2 {
+    font-size: 1.25rem;
+}
+
+
+.mentoria-markdown h3 {
+    font-size: 1.1rem;
+}
+
+
+.mentoria-markdown h4 {
+    font-size: 1rem;
+}
+
+
+/* ========================================
+   Listas
+   ======================================== */
+
+.mentoria-markdown ul,
+.mentoria-markdown ol {
+
+    margin: 8px 0;
+
+    padding-left: 24px;
+}
+
+
+.mentoria-markdown li {
+    margin-bottom: 4px;
+
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+
+/* ========================================
+   Negrito
+   ======================================== */
+
+.mentoria-markdown strong {
+    font-weight: 700;
+}
+
+
+/* ========================================
+   Links
+   ======================================== */
+
+.mentoria-markdown a {
+    color: #276b27;
+
+    text-decoration: underline;
+
+    /*
+       Mantemos "anywhere" para URLs muito longas,
+       evitando que elas ultrapassem a bolha.
+    */
+
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+
+.mentoria-markdown a:hover {
+    text-decoration: none;
+}
+
+
+/* ========================================
+   Código inline
+   ======================================== */
+
+.mentoria-markdown code {
+    background: rgba(255, 255, 255, 0.65);
+
+    border-radius: 4px;
+
+    padding: 2px 5px;
+
+    font-family:
+        Consolas,
+        Monaco,
+        "Courier New",
+        monospace;
+
+    font-size: 0.9em;
+
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+
+/* ========================================
+   Blocos de código
+   ======================================== */
+
+.mentoria-markdown pre {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    background: #1e1e1e;
+    color: #f5f5f5;
+
+    border-radius: 8px;
+
+    padding: 14px;
+    margin: 12px 0;
+
+    box-sizing: border-box;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    white-space: pre;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.mentoria-markdown pre code {
+    display: block;
+
+    width: max-content;
+    min-width: 100%;
+    max-width: none;
+
+    background: transparent;
+
+    padding: 0;
+
+    color: inherit;
+
+    white-space: pre;
+
+    word-break: normal;
+    overflow-wrap: normal;
+}
+
+
+/* ========================================
+   Citações
+   ======================================== */
+
+.mentoria-markdown blockquote {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 12px 0;
+
+    padding-left: 12px;
+
+    border-left: 4px solid #509e2f;
+
+    color: #444;
+
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+
+/* ========================================
+   Tabelas Markdown
+   ======================================== */
+
+.mentoria-markdown table {
+    width: 100%;
+    max-width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+
+    margin: 12px 0;
+}
+
+
+.mentoria-markdown th,
+.mentoria-markdown td {
+
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    padding: 8px;
+
+    text-align: left;
+    vertical-align: top;
+
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+
+.mentoria-markdown th {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+
+/* ========================================
+   Imagens presentes no Markdown
+   ======================================== */
+
+.mentoria-markdown img {
+    display: block;
+
+    width: auto;
+    max-width: 100%;
+    height: auto;
+
+    margin: 10px auto;
+}
+
+
+/* ========================================
+   Linha horizontal Markdown
+   ======================================== */
+
+.mentoria-markdown hr {
+    width: 100%;
+
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+    margin: 16px 0;
+}
+
+
+/* ========================================
+   Área inferior - campo de entrada
+   ======================================== */
+
+.react-chatbot-kit-chat-input-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    padding-bottom: 12px !important;
+
+    box-sizing: border-box !important;
+
+    background-color: #ffffff !important;
+}
+
+
+/* ========================================
+   Campo de texto
+   ======================================== */
+
+.react-chatbot-kit-chat-input {
+    min-width: 0 !important;
+
+    padding: 12px 14px !important;
+
+    border: 1px solid #d5d5d5 !important;
+    border-radius: 10px 0 0 10px !important;
+
+    box-sizing: border-box !important;
+
+    font-size: 16px !important;
+
+    outline: none !important;
+}
+
+
+.react-chatbot-kit-chat-input:focus {
+    border-color: #98a92c !important;
+}
+
+
+/* ========================================
+   Botão enviar
+   ======================================== */
+
+.react-chatbot-kit-chat-btn-send {
+    min-width: 48px !important;
+
+    border-radius: 0 10px 10px 0 !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* =====================================================
+   Indicador de processamento do MentorIA
+   ===================================================== */
+
+.mentoria-loading {
+    position: absolute;
+
+    /* Posiciona acima do campo de digitação */
+    bottom: 58px;
+    left: 12px;
+
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 6px;
+
+    max-width: calc(100% - 24px);
+
+    padding: 7px 12px;
+
+    box-sizing: border-box;
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    font-family: inherit;
+    font-size: 13px;
+
+    color: #555;
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ========================================
+   Texto do indicador
+   ======================================== */
+
+.mentoria-loading-text {
+    line-height: 1.3;
+
+    overflow-wrap: normal;
+    word-break: normal;
+}
+
+
+/* ========================================
+   Container dos três pontos
+   ======================================== */
+
+.loading-dots {
+    display: inline-flex;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    gap: 3px;
+}
+
+
+/* ========================================
+   Cada ponto
+   ======================================== */
+
+.loading-dots span {
+    display: inline-block;
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background-color: #509E2F;
+
+    animation: loading-dot 1.4s infinite ease-in-out;
+}
+
+
+/* ========================================
+   Atraso individual dos pontos
+   ======================================== */
+
+.loading-dots span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+
+.loading-dots span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+
+.loading-dots span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+
+/* ========================================
+   Animação dos pontos
+   ======================================== */
+
+@keyframes loading-dot {
+
+    0%,
+    60%,
+    100% {
+        opacity: 0.25;
+        transform: translateY(0);
+    }
+
+    30% {
+        opacity: 1;
+        transform: translateY(-2px);
+    }
+}
+
+
+/* ========================================
+   Responsividade para Smartphones
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    /* ====================================
+       Banner
+       ==================================== */
+
+    .mentoria-banner {
+        width: calc(90% - 120px);
+        max-width: none;
+
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 12px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* ====================================
+       Wrapper do Chat
+       ==================================== */
+
+    .chat-wrapper {
+        width: calc(100% - 20px);
+        max-width: none;
+        min-width: 0;
+
+        margin-left: 10px;
+        margin-right: 10px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* ====================================
+       Estrutura geral
+       ==================================== */
+
+    .react-chatbot-kit-chat-container {
+        width: 100% !important;
+        max-width: none !important;
+        min-width: 0 !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    .react-chatbot-kit-chat-inner-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    .react-chatbot-kit-chat-message-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    /* ====================================
+       Linha da mensagem do MentorIA
+       ==================================== */
+
+    .react-chatbot-kit-chat-bot-message-container {
+        display: flex !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        align-items: flex-start !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    /* ====================================
+       Bolha do MentorIA
+       ==================================== */
+
+    .react-chatbot-kit-chat-bot-message {
+        width: auto !important;
+
+        max-width: calc(100% - 58px) !important;
+        min-width: 0 !important;
+
+        flex: 1 1 0 !important;
+
+        margin-left: 6px !important;
+        margin-right: 0 !important;
+
+        padding: 12px !important;
+
+        box-sizing: border-box !important;
+
+        overflow-wrap: break-word !important;
+        word-break: normal !important;
+    }
+
+
+    /* ====================================
+       Mensagens do usuário
+       ==================================== */
+
+    .react-chatbot-kit-user-chat-message-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    .react-chatbot-kit-user-chat-message {
+        width: auto !important;
+
+        max-width: calc(100% - 52px) !important;
+        min-width: 0 !important;
+
+        box-sizing: border-box !important;
+
+        overflow-wrap: break-word !important;
+        word-break: normal !important;
+    }
+
+
+    /* ====================================
+       Markdown no Smartphone
+       ==================================== */
+
+    .mentoria-markdown {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        overflow-wrap: break-word !important;
+        word-break: normal !important;
+    }
+
+
+    .mentoria-markdown p,
+    .mentoria-markdown li,
+    .mentoria-markdown blockquote,
+    .mentoria-markdown td,
+    .mentoria-markdown th {
+
+        overflow-wrap: break-word !important;
+        word-break: normal !important;
+    }
+
+
+    /*
+       Links permanecem com quebra agressiva para
+       evitar que URLs extensas aumentem a largura.
+    */
+
+    .mentoria-markdown a {
+        overflow-wrap: anywhere !important;
+        word-break: break-word !important;
+    }
+
+
+    /* ====================================
+       Código no Smartphone
+       ==================================== */
+
+    .mentoria-markdown pre {
+        display: block;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        box-sizing: border-box;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        white-space: pre;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+
+    .mentoria-markdown pre code {
+        max-width: none;
+
+        white-space: pre;
+
+        word-break: normal;
+        overflow-wrap: normal;
+    }
+
+
+    /* ====================================
+       Tabelas no Smartphone
+       ==================================== */
+
+    .mentoria-markdown table {
+        width: 100%;
+        max-width: 100%;
+
+        table-layout: fixed;
+    }
+
+
+    .mentoria-markdown th,
+    .mentoria-markdown td {
+
+        padding: 6px;
+
+        font-size: 0.9rem;
+
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+
+    /* ====================================
+       Imagens no Smartphone
+       ==================================== */
+
+    .mentoria-markdown img {
+        display: block;
+
+        width: auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* ====================================
+       Área inferior de entrada
+       ==================================== */
+
+    .react-chatbot-kit-chat-input-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        padding-bottom: 8px !important;
+
+        box-sizing: border-box !important;
+
+        background-color: #ffffff !important;
+    }
+
+
+    /* ====================================
+       Campo de texto
+       ==================================== */
+
+    .react-chatbot-kit-chat-input {
+        min-width: 0 !important;
+
+        padding: 12px 14px !important;
+
+        border: 1px solid #d5d5d5 !important;
+        border-radius: 10px 0 0 10px !important;
+
+        box-sizing: border-box !important;
+
+        /*
+           16px evita o zoom automático do Safari
+           ao tocar no input.
+        */
+
+        font-size: 16px !important;
+    }
+
+
+    /* ====================================
+       Botão enviar
+       ==================================== */
+
+    .react-chatbot-kit-chat-btn-send {
+        min-width: 48px !important;
+
+        border-radius: 0 10px 10px 0 !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    /* ====================================
+       Loading no Smartphone
+       ==================================== */
+
+    .mentoria-loading {
+        left: 8px;
+
+        max-width: calc(100% - 16px);
+
+        font-size: 12px;
+    }
+}
