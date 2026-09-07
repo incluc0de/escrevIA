@@ -5,7 +5,9 @@ const chatConfig = {
     name: 'EscrevIA',
 
     initialMessage:
-      '👋 Olá! Eu sou o **EscrevIA**, seu assistente para aprender e desenvolver a escrita. ✏️ Aqui, **você é o autor**! Eu posso ajudar você a organizar ideias, compreender dificuldades, revisar seus textos e descobrir maneiras de escrever cada vez melhor.💡 Vamos aprender no processo: **escreva, revise, compreenda, reescreva e evolua** Para começarmos, **como você gostaria que eu o chamasse?**',
+      '👋 Olá! Eu sou o **EscrevIA**, seu assistente para aprender e desenvolver a escrita. ✏️'+
+      'Aqui, **você é o autor**! Eu posso ajudar você a organizar ideias, compreender dificuldades, revisar seus textos e descobrir maneiras de escrever cada vez melhor.💡'+
+      'Vamos aprender no processo: **escreva, revise, compreenda, reescreva e evolua** Para começarmos, **como você gostaria que eu o chamasse?**',
   },
 
   interface: {
